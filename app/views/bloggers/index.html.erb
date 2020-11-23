@@ -1,0 +1,5 @@
+<h1> List of all bloggers</h1>
+
+<% @bloggers.each do |b| %>
+    <h2> <%= link_to b.name, blogger_path(b) %> </h2>
+<% end %>
